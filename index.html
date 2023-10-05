@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+</head>
+<body>
+<div class="all">
+    <div class="shadow-lg mb-5 rounded" id="container">
+        <div id="display" class="display-1 bg-black text-white-50 rounded text-end">0</div>
+        <div class="buttons">
+        <div class="firstcol">
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(7)">7</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(4)">4</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(1)">1</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(0)">0</button>
+        </div>
+        <div class="secondcol">
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(8)">8</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(5)">5</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(2)">2</button>
+            <button type="button" class="btn btn-outline-primary"  onclick="addToDisplay('.')">.</button>
+
+        </div>
+        <div class="thirdcol">
+            <button type="button" class="btn btn-outline-secondary" onclick="clearLast()">C</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(9)">9</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(6)">6</button>
+             <button type="button" class="btn btn-outline-primary" onclick="addToDisplay(3)">3</button>
+             <button type="button" class="btn btn-outline-secondary" onclick=" equality()">=</button>
+
+        </div>   
+        <div class="fourthcol">
+
+            <button type="button" class="btn btn-outline-success" onclick="clearDisplay()">AC</button>
+            <button type="button" class="btn btn-outline-light" onclick="addToDisplay('+')">+</button>
+            <button type="button" class="btn btn-outline-light" onclick="addToDisplay('-')">-</button>
+            <button type="button" class="btn btn-outline-light" onclick="addToDisplay('*')">*</button>
+            <button type="button" class="btn btn-outline-light" onclick="addToDisplay('/')">/</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

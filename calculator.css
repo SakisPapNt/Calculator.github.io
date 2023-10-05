@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#e66465, #9198e5,#e66465);
+}
+
+#container{
+    margin-top: 50px;
+    background-color: silver;
+    width: 450px;
+    height: 420px;
+    border-radius: 10px;   
+    box-shadow: 5px double black; 
+}
+
+
+#display{    
+    
+    max-width: 100%;
+    
+    overflow: hidden; /* Hide the overflowed content */
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+}
+
+.firstcol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 48px;
+}
+
+.secondcol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 48px;
+
+}
+
+.thirdcol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+
+}
+
+.fourthcol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+button{
+    width: 60px;
+    padding-bottom: 10px;
+}
